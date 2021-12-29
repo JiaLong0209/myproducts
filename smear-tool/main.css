@@ -3,6 +3,68 @@
     margin: 0;
     padding: 0;
     list-style: none;
-
+    font-family:sans-serif;
+    background: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
+.header{
+    width: 100%;
+    height: 60px;
+    position: relative;
+    background: rgb(23, 5, 43);
+}
+.banner{
+    display: flex;
+    height: 100%;
+    position:relative;
+    font-size: 50px;
+    color: aliceblue;
+    font-weight: 700;
+    background: rgb(23, 5, 43);
+    float: left;
+    left: 40px;
+    align-items: center;
+}
+.guide{
+    display: flex;
+    height: 100%;
+    position: relative;
+    float: right;
+    background: rgb(23, 5, 43);
+}  
+.guide a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    transition: .15s;
+    padding: 0px 10px;
+    margin: 0px 0px;
+    background: rgb(23, 5, 43);
+    color: aliceblue;
+}
+.guide a:nth-child(4){
+    font-size: 14px;
+}
+.guide a:nth-child(5){
+    font-size: 14px;
+}
+.guide a:hover{
+    background: rgb(231, 235, 248);
+    color: rgb(37, 36, 36);
+}
+.guide a .effect{
+    position:relative;
+    transition: .3s;
+    background: rgb(0, 0, 0);
+    width: 2px;
+    left: -5px;
+    height: 0%;
+    display: block;
+    opacity: 0;  
+}
+.guide a:hover .effect{
+    opacity: 1;
+    height: 60%;
+}
