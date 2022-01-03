@@ -1,27 +1,30 @@
-*{
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family:sans-serif;
+    font-family: sans-serif;
     background: rgb(255, 255, 255);
     text-decoration: none;
 }
-
-.header{
+.header {
     width: 100%;
     height: 60px;
-    position:fixed;
+    position: fixed;
     background: rgb(23, 5, 43);
+    z-index: 10;
 }
-#clear{
+
+#clear {
     width: 100%;
     height: 60px;
     clear: left;
 }
-.banner{
+
+.banner {
     display: flex;
     height: 100%;
-    position:relative;
+    position: relative;
     font-size: 55px;
     color: aliceblue;
     font-weight: 700;
@@ -29,15 +32,17 @@
     float: left;
     left: 50px;
     align-items: center;
-    
+
 }
-.guide{
+
+.guide {
     display: flex;
     height: 100%;
     position: relative;
     float: right;
     background: rgb(23, 5, 43);
-}  
+}
+
 .guide a {
     display: flex;
     justify-content: center;
@@ -49,31 +54,103 @@
     background: rgb(23, 5, 43);
     color: aliceblue;
 }
-.guide a:nth-child(4){
+
+.guide a:nth-child(4) {
     font-size: 14px;
 }
-.guide a:nth-child(5){
+
+.guide a:nth-child(5) {
     font-size: 14px;
 }
-.guide a:hover{
+
+.guide a:hover {
     background: rgb(231, 235, 248);
     color: rgb(37, 36, 36);
 }
-.guide a .effect{
-    position:relative;
+
+.guide a .effect {
+    position: relative;
     transition: .3s;
     background: rgb(0, 0, 0);
     width: 2px;
     left: -5px;
     height: 0%;
     display: block;
-    opacity: 0;  
+    opacity: 0;
 }
-.guide a:hover .effect{
+
+.guide a:hover .effect {
     opacity: 1;
     height: 60%;
 }
 
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.img {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+.img img {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.slogan1 {
+    position: absolute;
+    font-size: 50px;
+    color: brown;
+    font-weight: 200;
+    top: 5%;
+    left: 29%;
+    background: rgb(255, 255, 255, 0);
+    animation: fadeIn 1s ease 1;
+}
+.slogan2 {
+    position: absolute;
+    font-size: 50px;
+    color: brown;
+    font-weight: 200;
+    top: 30%;
+    left: 12%;
+    background: rgb(255, 255, 255, 0);
+    animation: fadeInLeft 1.7s ease 1 ;
+    writing-mode: vertical-lr;
+}
+.slogan3 {
+    position: absolute;
+    font-size: 50px;
+    color: brown;
+    font-weight: 200;
+    top: 30%;
+    left: 85%;
+    background: rgb(255, 255, 255, 0);
+    animation: fadeInRight 2s ease 1;
+    writing-mode: vertical-lr;
+}
+.slogan1,.slogan2,.slogan3{
+    transition: .5s;
+    padding: 3px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC',sans-serif !important;
+}
+.slogan1:hover,.slogan2:hover,.slogan3:hover{
+    border: 3px solid rgb(81, 82, 83);
+    box-shadow:2px 2px 10px rgb(150, 150, 150);
+    
+    transform: scale(1.1);
+}
 
 
 
@@ -86,11 +163,7 @@
 
 
 
-
-
-
-
-.footer{
+.footer {
     width: 100%;
     height: 30px;
     position: relative;
@@ -100,12 +173,13 @@
     justify-content: center;
     align-items: center;
     color: aliceblue;
-    background: rgb(165, 165, 165);
-    font-family: 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+    background: rgb(25, 24, 29);
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.footer span{
+
+.footer span {
     position: relative;
-    background: rgb(165, 165, 165);
+    background: rgba(189, 176, 238, 0);
 
 }
 
@@ -120,17 +194,46 @@
 
 
 
-@keyframes fadeIn{
-    0%{
-        opacity: 0.5;
-        transform: translateY(100px);
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
     }
-    100%{
+
+    100% {
         opacity: 1;
-        transform: translateY(0px); 
+        transform: translateY(0px);
     }
 }
 
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    50% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
 
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
 
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    30% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
 
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
