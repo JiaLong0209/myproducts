@@ -1,5 +1,4 @@
 *{
-
     margin: 0;
     padding: 0;
     list-style: none;
@@ -11,20 +10,26 @@
 .header{
     width: 100%;
     height: 60px;
-    position: relative;
+    position:fixed;
     background: rgb(23, 5, 43);
+}
+#clear{
+    width: 100%;
+    height: 60px;
+    clear: left;
 }
 .banner{
     display: flex;
     height: 100%;
     position:relative;
-    font-size: 50px;
+    font-size: 55px;
     color: aliceblue;
     font-weight: 700;
     background: rgb(23, 5, 43);
     float: left;
-    left: 40px;
+    left: 50px;
     align-items: center;
+    
 }
 .guide{
     display: flex;
@@ -38,7 +43,7 @@
     justify-content: center;
     align-items: center;
     font-size: 19px;
-    transition: .15s;
+    transition: .3s;
     padding: 0px 10px;
     margin: 0px 0px;
     background: rgb(23, 5, 43);
@@ -68,3 +73,64 @@
     opacity: 1;
     height: 60%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    height: 30px;
+    position: relative;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    background: rgb(165, 165, 165);
+    font-family: 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer span{
+    position: relative;
+    background: rgb(165, 165, 165);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0.5;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px); 
+    }
+}
+
+
+
+
