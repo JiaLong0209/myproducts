@@ -1,12 +1,16 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     font-family: sans-serif;
-    background: rgb(255, 255, 255);
+    background: rgb(246, 252, 252);
     text-decoration: none;
+    font-weight: 300;
+
 }
+
 .header {
     width: 100%;
     height: 60px;
@@ -33,6 +37,7 @@
     left: 50px;
     align-items: center;
 
+
 }
 
 .guide {
@@ -40,7 +45,6 @@
     height: 100%;
     position: relative;
     float: right;
-    background: rgb(23, 5, 43);
 }
 
 .guide a {
@@ -55,7 +59,7 @@
     color: aliceblue;
 }
 
-.guide a:nth-child(4) {
+.guide a:nth-child(6) {
     font-size: 14px;
 }
 
@@ -97,13 +101,14 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    
+
 }
 
 .img img {
     width: 100%;
     height: 100vh;
     position: relative;
+
 }
 
 .slogan1 {
@@ -115,7 +120,10 @@
     left: 29%;
     background: rgb(255, 255, 255, 0);
     animation: fadeIn 1s ease 1;
+    font-family: 'Noto Sans TC', sans-serif !important;
+
 }
+
 .slogan2 {
     position: absolute;
     font-size: 50px;
@@ -124,9 +132,12 @@
     top: 30%;
     left: 12%;
     background: rgb(255, 255, 255, 0);
-    animation: fadeInLeft 1.7s ease 1 ;
+    animation: fadeInLeft 1.7s ease 1;
     writing-mode: vertical-lr;
+    font-family: 'Noto Sans TC', sans-serif !important;
+
 }
+
 .slogan3 {
     position: absolute;
     font-size: 50px;
@@ -137,31 +148,227 @@
     background: rgb(255, 255, 255, 0);
     animation: fadeInRight 2s ease 1;
     writing-mode: vertical-lr;
+    font-family: 'Noto Sans TC', sans-serif !important;
+
 }
-.slogan1,.slogan2,.slogan3{
-    transition: .5s;
+
+.slogan1, .slogan2, .slogan3 {
+    transition: .3s;
     padding: 3px;
     border-radius: 20px;
     box-sizing: border-box;
-    font-family: 'Noto Sans TC',sans-serif !important;
-}
-.slogan1:hover,.slogan2:hover,.slogan3:hover{
-    border: 3px solid rgb(81, 82, 83);
-    box-shadow:2px 2px 10px rgb(150, 150, 150);
-    
-    transform: scale(1.1);
 }
 
+.slogan1:hover, .slogan2:hover, .slogan3:hover {
+    border: 3px solid rgb(164, 164, 168);
+    box-shadow: 2px 2px 10px rgb(150, 150, 150);
+
+    transform: scale(1.05);
+}
+
+.photo {
+    width: 100%;
+
+}
+
+.photo h1 {
+
+    text-align: center;
+}
+
+.photo span {
+
+    font-weight: 300;
+    font-size: 50px;
+    color: rgb(82, 83, 83);
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 5px;
+    transition: 0.3s;
+
+}
+
+.photo span:hover {
+    background: rgb(195, 240, 219);
+
+}
+
+.photo img {
+    position: relative;
+    width: 92%;
+    height: 100vh;
+    left: 4%;
+
+}
+
+.feature {
+    width: 100%;
+
+}
+
+.feature h1 {
+    width: 100%;
+    height: 50px;
+    font-weight: 300;
+    font-size: 50px;
+    text-align: center;
+}
+
+.feature_box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#feature>span {
+    color: rgb(82, 83, 83);
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 3px;
+    transition: 0.3s;
+
+}
+
+#feature>span:hover {
+    background: rgb(73, 228, 255);
+}
+
+.feature_box ul {
+    max-width: 33%;
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 6px double rgb(188, 199, 192);
+    box-shadow: 2px 2px 10px #222;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 30px;
+    line-height: 35px;
 
 
+}
 
+.feature_box ul li {
+    transition: 0.3s;
+}
 
+.feature_box ul li:hover {
+    transform: scale(1.05);
 
+}
 
+li span {
+    background: rgb(73, 228, 255);
+    border-radius: 10px;
+    padding: 3px;
+}
 
+.concept {
+    width: 100%;
+}
 
+.concept h1 {
+    text-align: center;
+}
 
+#concept>span {
+    font-weight: 300;
+    font-size: 50px;
+    color: rgb(82, 83, 83);
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 5px;
+    transition: 0.3s;
 
+}
+
+#concept>span:hover {
+    background: rgb(221, 250, 92);
+}
+
+.concept_box {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.concept_box .text_box {
+    width: 25%;
+    background: rgb(252, 250, 250);
+    border: 3px solid #952;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.text_box {
+    font-size: 25px;
+
+    padding: 30px;
+}
+
+.text_box span {
+    font-size: 40px;
+    border-radius: 10px;
+    transition: 0.3s;
+    padding: 3px;
+}
+
+.text_box span:hover {
+
+    background: rgb(221, 250, 92);
+}
+
+.contact {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+    background: rgb(32, 32, 32);
+    display: flex;
+    justify-content: center;
+}
+
+.contact_box {
+    position: relative;
+    width: 40%;
+    background: rgb(32, 32, 32);
+    display: flex;
+    justify-content: center;
+
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact span {
+    font-weight: 300;
+    font-size: 50px;
+    color: rgb(82, 83, 83);
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.contact_box ul {
+    background: rgb(32, 32, 32);
+
+}
+
+.contact_box ul li {
+    background: rgb(32, 32, 32);
+    color: rgb(200, 194, 206);
+    line-height: 50px;
+
+}
+
+.contact_box ul li:nth-child(1) {
+    margin-top: 20px;
+    font-size: 50px;
+    line-height: 65px;
+}
 
 .footer {
     width: 100%;
@@ -183,10 +390,81 @@
 
 }
 
+.dashed {
+    width: 90%;
+    height: 1px;
+    margin: 25px 0;
+    background: rgb(204, 204, 204);
+    position: relative;
+    left: 5%;
+}
 
+.dashed2 {
+    width: 90%;
+    height: 1px;
+    margin: 15px 0;
+    background: rgb(165, 162, 162);
+    position: relative;
+    left: 5%;
+}
 
+.login {
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background: rgb(16, 38, 59);
+}
 
+.login_box {
+    background: #000;
+    position: absolute;
+    width: 300px;
+    padding: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 
+}
+
+.login_box h1 {
+    background: none;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: lavenderblush;
+}
+
+.login_box input[type="text"], .login_box input[type="password"] {
+    outline: none;
+    background: none;
+    display: block;
+    width: 150px;
+    color: white;
+    margin: 20px auto;
+    padding: 10px 14px;
+    border: 2px solid #2398db;
+    border-radius: 24px;
+    transition: 0.3s;
+}
+.login_box input[type="text"]:focus, 
+.login_box input[type="password"]:focus{
+    width: 200px;
+    border-color: #2ecc71;
+
+}
+.login_box input[type="submit"]{
+    outline: none;
+    background: none;
+    display: block;
+    width: 100px;
+    color: white;
+    margin: 20px auto;
+    padding: 10px 14px;
+    border: 2px solid #2ecc71;
+    border-radius: 24px;
+    transition: 0.3s;
+    cursor:pointer;
+}
 
 
 
@@ -211,6 +489,7 @@
         opacity: 0;
         transform: translateX(100px);
     }
+
     50% {
         opacity: 0;
         transform: translateX(100px);
@@ -227,6 +506,7 @@
         opacity: 0;
         transform: translateX(-100px);
     }
+
     30% {
         opacity: 0;
         transform: translateX(-100px);
