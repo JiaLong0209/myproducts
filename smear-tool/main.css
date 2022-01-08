@@ -100,7 +100,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    overflow-y: hidden;
 
 }
 
@@ -168,11 +168,12 @@
 
 .photo {
     width: 100%;
+    z-index: 2;
 
 }
 
 .photo h1 {
-
+    background: #fff;
     text-align: center;
 }
 
@@ -195,15 +196,15 @@
 
 .photo img {
     position: relative;
-    width: 92%;
-    height: 100vh;
-    left: 4%;
+    width: 80%;
+    height: 90vh;
+    left: 10%;
 
 }
 
 .feature {
     width: 100%;
-
+    z-index: 2;
 }
 
 .feature h1 {
@@ -416,7 +417,7 @@ li span {
 }
 
 .login_box {
-    
+
     border-radius: 20px;
     background: #000;
     position: absolute;
@@ -430,7 +431,7 @@ li span {
 }
 
 .login_box h1 {
-    
+
     background: none;
     text-transform: uppercase;
     font-size: 50px;
@@ -445,17 +446,19 @@ li span {
     color: white;
     margin: 20px auto;
     padding: 10px 14px;
-    border: 2px solid #2398db;
+    border: 2px solid #4d98ca;
     border-radius: 24px;
     transition: 0.3s;
 }
-.login_box input[type="text"]:focus, 
+
+.login_box input[type="text"]:focus,
 .login_box input[type="password"]:focus{
     width: 200px;
-    border-color: #2ecc71;
+    border-color: #54d865;
 
 }
-.login_box input[type="submit"]{
+
+.login_box input[type="button"] {
     outline: none;
     background: none;
     display: block;
@@ -466,16 +469,12 @@ li span {
     border: 2px solid #2ecc71;
     border-radius: 24px;
     transition: 0.3s;
-    cursor:pointer;
-}
-.login_box input[type="submit"]:hover{
-    background:#2ecc71 ;
+    cursor: pointer;
 }
 
-
-
-
-
+.login_box input[type="button"]:hover {
+    background: #2ecc71;
+}
 
 @keyframes fadeIn {
     0% {
