@@ -648,12 +648,12 @@ li .point {
     }
 
     .slogan1, .slogan2, .slogan3 {
-        font-size: 25px;
+        font-size: 21px;
     }
 
     .slogan1 {
-        top: 14%;
-        left: 15%;
+        top: 10%;
+        left: 19%;
     }
 
     .slogan2 {
@@ -665,7 +665,7 @@ li .point {
     }
 
     #clear {
-        height: 12vh;
+        height: 15vh;
     }
 
     .img {
