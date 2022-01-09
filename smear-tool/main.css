@@ -20,8 +20,9 @@
 }
 
 #clear {
+    position: relative;
     width: 100%;
-    height: 60px;
+    height: 50px;
     clear: left;
 }
 
@@ -49,6 +50,7 @@
 
 .guide a {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     font-size: 19px;
@@ -74,7 +76,7 @@
 
 .guide a .effect {
     position: relative;
-    transition: .3s;
+    transition: .3s 0.1s;
     background: rgb(0, 0, 0);
     width: 2px;
     left: -5px;
@@ -100,7 +102,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow-y: hidden;
+    overflow: hidden;
 
 }
 
@@ -117,7 +119,7 @@
     color: brown;
     font-weight: 200;
     top: 5%;
-    left: 29%;
+    left: 28%;
     background: rgb(255, 255, 255, 0);
     animation: fadeIn 1s ease 1;
     font-family: 'Noto Sans TC', sans-serif !important;
@@ -130,7 +132,7 @@
     color: brown;
     font-weight: 200;
     top: 30%;
-    left: 12%;
+    left: 10%;
     background: rgb(255, 255, 255, 0);
     animation: fadeInLeft 1.7s ease 1;
     writing-mode: vertical-lr;
@@ -144,7 +146,7 @@
     color: brown;
     font-weight: 200;
     top: 30%;
-    left: 85%;
+    right: 12%;
     background: rgb(255, 255, 255, 0);
     animation: fadeInRight 2s ease 1;
     writing-mode: vertical-lr;
@@ -159,12 +161,13 @@
     box-sizing: border-box;
 }
 
+/* 
 .slogan1:hover, .slogan2:hover, .slogan3:hover {
     border: 3px solid rgb(164, 164, 168);
     box-shadow: 2px 2px 10px rgb(150, 150, 150);
 
     transform: scale(1.05);
-}
+} */
 
 .photo {
     width: 100%;
@@ -218,7 +221,11 @@
 .feature_box {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 40px 0px;
+}
+
+.feature_box:nth-child(2n) {
+    flex-direction: row-reverse;
 }
 
 #feature>span {
@@ -259,10 +266,15 @@
 
 }
 
-li span {
+iframe {
+    width: 642px;
+    height: 361px;
+}
+
+li .point {
     background: rgb(73, 228, 255);
-    border-radius: 10px;
-    padding: 3px;
+    border-radius: 20px;
+    padding: 4px;
 }
 
 .concept {
@@ -323,7 +335,7 @@ li span {
 .contact {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 370px;
     margin-top: 30px;
     background: rgb(32, 32, 32);
     display: flex;
@@ -351,6 +363,10 @@ li span {
     border-radius: 20px;
     padding: 5px;
     transition: 0.3s;
+}
+
+#contact span:hover {
+    background: rgb(212, 212, 212);
 }
 
 .contact_box ul {
@@ -413,13 +429,13 @@ li span {
     width: 100%;
     height: 100vh;
     font-family: sans-serif;
-    background: rgb(16, 38, 59);
+    background: rgb(241, 239, 239);
 }
 
 .login_box {
 
     border-radius: 20px;
-    background: #000;
+    background: rgb(23, 25, 58);
     position: absolute;
     width: 300px;
     padding: 30px;
@@ -452,7 +468,7 @@ li span {
 }
 
 .login_box input[type="text"]:focus,
-.login_box input[type="password"]:focus{
+.login_box input[type="password"]:focus {
     width: 200px;
     border-color: #54d865;
 
@@ -519,5 +535,215 @@ li span {
     100% {
         opacity: 1;
         transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .slogan1, .slogan2, .slogan3 {
+        font-size: 45px;
+    }
+
+    .slogan1 {
+        left: 25%;
+    }
+
+    .img {
+        height: 80vh;
+    }
+
+    .img img {
+        height: 80vh;
+    }
+
+    .photo img {
+        height: 70vh;
+    }
+
+    .feature_box ul {
+        font-size: 24px;
+    }
+
+    iframe {
+        width: 50%;
+    }
+
+    .text_box {
+        padding: 25px;
+        font-size: 22px;
+    }
+
+    .contact_box ul li:nth-child(1) {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:770px) {
+
+    .slogan1, .slogan2, .slogan3 {
+        font-size: 40px;
+    }
+
+    .slogan1 {
+        left: 22%;
+    }
+
+    .img {
+        height: 50vh;
+    }
+
+    .img img {
+        height: 50vh;
+    }
+
+    .photo img {
+        height: 40vh;
+    }
+
+    .feature_box ul {
+        font-size: 22px;
+    }
+
+    iframe {
+        width: 45%;
+    }
+
+    .text_box {
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    .contact_box ul li:nth-child(1) {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .header {
+        width: 100%;
+    }
+
+    #banner {
+        width: 100%;
+    }
+
+    .banner {
+        left: 23%;
+    }
+
+    .guide {
+        width: 100%;
+        box-sizing: border-box;
+
+    }
+
+    .guide a {
+        font-size: 20px;
+    }
+
+    .guide a:hover .effect {
+        opacity: 1;
+        height: 0%;
+    }
+
+    .slogan1, .slogan2, .slogan3 {
+        font-size: 25px;
+    }
+
+    .slogan1 {
+        top: 14%;
+        left: 15%;
+    }
+
+    .slogan2 {
+        left: 5%;
+    }
+
+    .slogan3 {
+        right: 3%;
+    }
+
+    #clear {
+        height: 12vh;
+    }
+
+    .img {
+        height: 30vh;
+        width: 100%;
+    }
+
+    .img img {
+        height: 30vh;
+        width: 100%;
+    }
+
+    .photo img {
+        height: 23vh;
+    }
+
+    .feature_box {
+        flex-direction: column;
+        align-items: center;
+        margin: 5px 0;
+    }
+
+    .feature_box:nth-child(2n) {
+        flex-direction: column;
+
+    }
+
+    .feature_box ul {
+        box-sizing: border-box;
+        font-size: 20px;
+        max-width: 90%;
+        margin: 20px 0px;
+    }
+
+
+    iframe {
+        width: 90%;
+    }
+
+    .concept_box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact_box {
+        flex-direction: column-reverse;
+    }
+
+    .concept_box .text_box {
+        box-sizing: border-box;
+        width: 90%;
+        padding: 15px;
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .contact_box {
+        width: 90%;
+
+    }
+
+    .contact_box ul, .contact_box ul li {
+        max-width: 90%;
+    }
+
+    .contact_box ul li:nth-child(1) {
+        font-size: 28px;
+    }
+
+    #photo span,
+    #feature span,
+    #concept span,
+    #contact span {
+        font-size: 35px;
+        padding: 5px;
+    }
+
+    .text_box span {
+        font-size: 32px;
     }
 }

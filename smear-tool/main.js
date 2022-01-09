@@ -8,7 +8,7 @@ function init(){
     window.addEventListener('scroll',function(){
         let value = window.scrollY;
         console.log(value);
-        img.style.top = value *0.3 + 'px';
+        img.style.top = value * 0.3 + 'px';
         
         
     });
@@ -16,7 +16,7 @@ function init(){
     var button = document.querySelector('.button');
     button.addEventListener('click', function(){
         console.log("123");
-        
+            
     });
     
 }
