@@ -251,7 +251,7 @@
     box-shadow: 2px 2px 10px #222;
     border-radius: 20px;
     padding: 30px;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 35px;
 
 
@@ -695,7 +695,7 @@ li .point {
 
     .feature_box ul {
         box-sizing: border-box;
-        font-size: 20px;
+        font-size: 18px;
         max-width: 90%;
         margin: 20px 0px;
     }
@@ -718,10 +718,12 @@ li .point {
         box-sizing: border-box;
         width: 90%;
         padding: 15px;
-        font-size: 20px;
+        font-size: 18px;
         margin: 10px 0;
     }
-
+    .contact{
+        height: 450px;
+    }
     .contact_box {
         width: 90%;
 
@@ -742,7 +744,6 @@ li .point {
         font-size: 35px;
         padding: 5px;
     }
-
     .text_box span {
         font-size: 32px;
     }
