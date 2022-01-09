@@ -8,6 +8,9 @@
     background: rgb(246, 252, 252);
     text-decoration: none;
     font-weight: 300;
+    /* Start https://www.cursors-4u.com */ 
+    /* cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur104.cur), auto !important; */
+    /* End https://www.cursors-4u.com */
 
 }
 
@@ -25,7 +28,9 @@
     height: 50px;
     clear: left;
 }
-
+#banner{
+    position: relative;
+}
 .banner {
     display: flex;
     height: 100%;
@@ -618,6 +623,26 @@ li .point {
     }
 }
 
+@media screen and (max-width:710px) {
+    .header{
+        height: 30px;
+    }
+    .guide{
+        width: 100vw;
+    }
+    .guide a{
+        font-size: 10px;
+    }
+    #banner{
+      
+        width: 100%;
+        left: 10%;
+    }
+    .banner{
+        font-size: 30px;
+    }
+
+}
 @media screen and (max-width:600px) {
 
     .header {
@@ -638,9 +663,6 @@ li .point {
 
     }
 
-    .guide a {
-        font-size: 20px;
-    }
 
     .guide a:hover .effect {
         opacity: 1;
@@ -648,7 +670,7 @@ li .point {
     }
 
     .slogan1, .slogan2, .slogan3 {
-        font-size: 21px;
+        font-size: 18px;
     }
 
     .slogan1 {
