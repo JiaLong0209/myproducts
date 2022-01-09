@@ -119,7 +119,7 @@
     color: brown;
     font-weight: 200;
     top: 5%;
-    left: 28%;
+    left: 30%;
     background: rgb(255, 255, 255, 0);
     animation: fadeIn 1s ease 1;
     font-family: 'Noto Sans TC', sans-serif !important;
@@ -132,7 +132,7 @@
     color: brown;
     font-weight: 200;
     top: 30%;
-    left: 10%;
+    left: 12%;
     background: rgb(255, 255, 255, 0);
     animation: fadeInLeft 1.7s ease 1;
     writing-mode: vertical-lr;
