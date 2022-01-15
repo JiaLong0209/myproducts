@@ -468,7 +468,7 @@ li .point {
 .login_box {
 
     border-radius: 20px;
-    background: linear-gradient(135deg,rgb(93, 129, 170),rgb(61, 98, 139) 20%,rgb(26, 45, 63) 85%,rgb(46, 46, 46));
+    background: linear-gradient(180deg,rgb(81, 112, 148),rgb(61, 98, 139) 20%,rgb(26, 45, 63) 85%,rgb(46, 46, 46));
     position: absolute;
     width: 300px;
     padding: 30px;
