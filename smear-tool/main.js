@@ -13,11 +13,12 @@ function init() {
     var slide = $('.slide');
     var img = document.querySelector(".img");
     
+    //載入時漸出 
     $('.container div,.container h1').animate({
         opacity:1
     },300);
 
-    // 圖片移動
+    // 圖片滑動時移動
     window.addEventListener('scroll', function () {
         let value = window.scrollY;
         console.log(value);
@@ -65,6 +66,8 @@ function init() {
         }, 500);
         return false;
     });
+
+    // button 點擊時
     $('input[type="button"]').click(() => {
         if (isShow === false) {
             $('h3').show(300);
