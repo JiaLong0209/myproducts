@@ -3,60 +3,71 @@
 window.onload = init();
 
 
-function init(){
+function init() {
     // var one = document.querySelector('#one');
     // one.addEventListener("click",()=>{
     //     console.log("df");
     //     document.querySelector('#photo').scrollIntoView({behavior: "auto"});
     // })
+    var isShow = false;
     var slide = $('.slide');
     var img = document.querySelector(".img");
-    window.addEventListener('scroll',function(){
+    window.addEventListener('scroll', function () {
         let value = window.scrollY;
         console.log(value);
         img.style.top = value * 0.3 + 'px';
-        if(value > 200){
+        if (value > 200) {
             slide.show(300);
-        } else{
+        } else {
             slide.hide(300);
         }
     });
-    $('#one').click(()=>{
+    $('#one').click(() => {
         $('html,body').animate({
             scrollTop:
-            $('#photo').offset().top-60
-        },500);
+                $('#photo').offset().top - 60
+        }, 500);
         return false;
     });
-    $('#two').click(()=>{
+    $('#two').click(() => {
         $('html,body').animate({
             scrollTop:
-            $('#feature').offset().top-60
-        },500);
+                $('#feature').offset().top - 60
+        }, 500);
         return false;
     });
-    $('#three').click(()=>{
+    $('#three').click(() => {
         $('html,body').animate({
             scrollTop:
-            $('#concept').offset().top-60
-        },500);
+                $('#concept').offset().top - 60
+        }, 500);
         return false;
     });
-    $('#four').click(()=>{
+    $('#four').click(() => {
         $('html,body').animate({
             scrollTop:
-            $('#contact').offset().top-60
-        },500);
+                $('#contact').offset().top - 60
+        }, 500);
         return false;
     });
-    $('.slide').click(()=>{
+    $('.slide').click(() => {
         $('html,body').animate({
             scrollTop:
-            $('#clear').offset().top
-        },500);
+                $('#clear').offset().top
+        }, 500);
         return false;
     });
-    
+    $('input[type="button"]').click(() => {
+        if (isShow === false) {
+            $('h3').show(300);
+            isShow = true;
+        }
+        else{
+            $('h3').hide(300);
+            isShow = false;
+        }
+
+    })
 
 
 }
