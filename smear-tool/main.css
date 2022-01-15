@@ -468,7 +468,7 @@ li .point {
 .login_box {
 
     border-radius: 20px;
-    background: rgb(23, 25, 58);
+    background: linear-gradient(135deg,rgb(93, 129, 170),rgb(61, 98, 139) 20%,rgb(26, 45, 63) 85%,rgb(46, 46, 46));
     position: absolute;
     width: 300px;
     padding: 30px;
@@ -485,6 +485,7 @@ li .point {
     text-transform: uppercase;
     font-size: 50px;
     color: lavenderblush;
+    font-weight:600;
 }
 
 .login_box input[type="text"], .login_box input[type="password"] {
@@ -523,6 +524,9 @@ li .point {
 
 .login_box input[type="button"]:hover {
     background: #2ecc71;
+}
+::placeholder{
+    color: rgb(218, 218, 218 ,0.9);
 }
 
 @keyframes fadeIn {
