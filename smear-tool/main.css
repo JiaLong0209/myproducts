@@ -471,7 +471,8 @@ li .point {
 
 .login_box {
     border: 2px solid rgb(91, 151, 175);
-    box-shadow: 10px 10px 10px rgb(23, 27, 63);
+    box-shadow: 10px 10px 10px rgb(23, 27, 63),
+    inset 0px 0px 25px rgba(143, 174, 202);
     border-radius: 20px;
     background: none;
     position: relative;
