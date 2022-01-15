@@ -12,6 +12,12 @@ function init() {
     var isShow = false;
     var slide = $('.slide');
     var img = document.querySelector(".img");
+    
+    $('.container div,.container h1').animate({
+        opacity:1
+    },300);
+
+    // 圖片移動
     window.addEventListener('scroll', function () {
         let value = window.scrollY;
         console.log(value);
@@ -22,6 +28,8 @@ function init() {
             slide.hide(300);
         }
     });
+
+    // 錨點動畫
     $('#one').click(() => {
         $('html,body').animate({
             scrollTop:

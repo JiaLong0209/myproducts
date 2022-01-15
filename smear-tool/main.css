@@ -13,6 +13,9 @@
     /* End https://www.cursors-4u.com */
 
 }
+.container div,.container h1{ 
+    opacity: 0;
+}
 .slide{
     display: none;
     opacity: 1;
