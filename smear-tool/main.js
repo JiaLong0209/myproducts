@@ -4,11 +4,6 @@ window.onload = init();
 
 
 function init() {
-    // var one = document.querySelector('#one');
-    // one.addEventListener("click",()=>{
-    //     console.log("df");
-    //     document.querySelector('#photo').scrollIntoView({behavior: "auto"});
-    // })
     var isShow = false;
     var slide = $('.slide');
     var img = document.querySelector(".img");
@@ -18,11 +13,11 @@ function init() {
         opacity:1
     },300);
 
-    // 圖片滑動時移動
+    // 滾輪滾動時圖片移動
     window.addEventListener('scroll', function () {
         let value = window.scrollY;
-        console.log(value);
         img.style.top = value * 0.3 + 'px';
+        // 滑至頂部按鈕
         if (value > 200) {
             slide.show(300);
         } else {
@@ -77,8 +72,5 @@ function init() {
             $('h3').hide(300);
             isShow = false;
         }
-
     })
-
-
 }
