@@ -74,3 +74,16 @@ function init() {
         }
     })
 }
+
+
+// 朱伯實驗
+
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll",()=>{
+    if(window.scrollY>100){
+        header.classList.add("opacity")
+    }else{
+        header.classList.remove("opacity")
+    }
+})

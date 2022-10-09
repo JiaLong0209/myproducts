@@ -61,6 +61,7 @@
     position: fixed;
     background: rgb(23, 5, 43);
     z-index: 10;
+    transition: .5s;    
 }
 
 #clear {
@@ -873,4 +874,22 @@ h3 span{
     .text_box span {
         font-size: 32px;
     }
+}
+
+/* 朱伯實驗 */
+
+.header.opacity{
+    background-color: #fff;
+    padding: 10px;
+    opacity: .6;
+    transition: .5s;
+}
+.header.opacity .banner{
+    background-color: transparent;
+    color:#000;
+}
+.header.opacity .guide a{
+    background-color: #fff;
+    font-weight: 600;
+    color:#000;
 }
